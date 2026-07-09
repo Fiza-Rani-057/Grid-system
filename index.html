@@ -42,6 +42,27 @@
     font-size: 20px;
     font-weight: bold;
    }
+
+    /* Grid 2  */
+
+    .container2{
+       width: 90%;
+            margin: 20px auto;
+            display: grid;
+            margin-top: 30px;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows:  100px 100px;
+            /* gap: 15px; */
+    }
+    .maincontent{
+    grid-row: 2/3;
+    background-color: green;
+    }
+    .slidebar2{
+       background-color: rgb(177, 116, 177);
+       grid-column: 4/4;
+    }
+     
     </style>
 </head>
 <body>
@@ -54,5 +75,13 @@
     <div class=" box content3">Content 3</div>
     <div class=" box footer">Footer</div>
     </div>
+
+
+    <div class="container2">
+    <div class="maincontent"> Main Content</div>
+    <div class="slidebar2">Slide bar</div>
+    <div class="twin">Twin</div>
+    <div class="twin">Twin</div>
+ </div>
 </body>
 </html>
